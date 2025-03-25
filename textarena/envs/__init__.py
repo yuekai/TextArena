@@ -189,6 +189,11 @@ register(id="SimpleNegotiation-v0", entry_point="textarena.envs.SimpleNegotiatio
 register(id="SimpleNegotiation-v0-short", entry_point="textarena.envs.SimpleNegotiation.env:SimpleNegotiationEnv", max_turns=6)
 register(id="SimpleNegotiation-v0-long", entry_point="textarena.envs.SimpleNegotiation.env:SimpleNegotiationEnv", max_turns=30)
 
+# Trade (two-player)
+register(id="Trade-v0", entry_point="textarena.envs.Trade.env:TradeEnv", max_turns=10)
+register(id="Trade-v0-short", entry_point="textarena.envs.Trade.env:TradeEnv", max_turns=6)
+register(id="Trade-v0-long", entry_point="textarena.envs.Trade.env:TradeEnv", max_turns=30)
+
 # SimpleBlindAunction (two-player)
 register(id="SimpleBlindAuction-v0", entry_point="textarena.envs.SimpleBlindAuction.env:SimpleBlindAuctionEnv", starting_capital=1000, num_items=5, conversation_rounds=3)
 register(id="SimpleBlindAuction-v0-quick", entry_point="textarena.envs.SimpleBlindAuction.env:SimpleBlindAuctionEnv", starting_capital=750, num_items=3, conversation_rounds=1)
